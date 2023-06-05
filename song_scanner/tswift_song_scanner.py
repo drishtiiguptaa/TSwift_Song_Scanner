@@ -32,6 +32,8 @@ available_letters = {
 }
 
 possible_songs = get_possible_songs(song_titles, available_letters)
+if not possible_songs:
+    print ("NO POSSIBLE SONGS")
 print("Possible songs:")
 for song in possible_songs:
     print(song)
